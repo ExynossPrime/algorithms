@@ -18,6 +18,7 @@ import random
 import time
 
 array = []
+time_sort = {}
 
 for i in range(10):
     array.append(random.randint(1, 100))
@@ -45,4 +46,68 @@ while h == 0:
 print(array_1)
 stop = time.time()
 print(f'Время работы в миллисекундах: {(stop - start) * 1000} \n')
+time_sort['Сортировка методом прямого обмена (сортировка методом пузырька)'] = (stop - start) * 1000
 
+
+# Сортировка методом прямого включения
+print('Сортировка методом прямого включения')
+start = time.time()
+
+#код
+
+print(array_2)
+stop = time.time()
+print(f'Время работы в миллисекундах: {(stop - start) * 1000} \n')
+time_sort['Сортировка методом прямого включения'] = (stop - start) * 1000
+
+
+# Сортировка методом прямого выбора
+print('Сортировка методом прямого выбора')
+start = time.time()
+
+#код
+
+print(array_3)
+stop = time.time()
+print(f'Время работы в миллисекундах: {(stop - start) * 1000} \n')
+time_sort['Сортировка методом прямого выбора'] = (stop - start) * 1000
+
+
+# Шейкерская сортировка
+print('Шейкерская сортировка')
+start = time.time()
+
+#код
+
+print(array_4)
+stop = time.time()
+print(f'Время работы в миллисекундах: {(stop - start) * 1000} \n')
+time_sort['Шейкерская сортировка'] = (stop - start) * 1000
+
+
+# Сортировка методом Шелла
+print('Сортировка методом Шелла')
+start = time.time()
+
+#код
+
+print(array_5)
+stop = time.time()
+print(f'Время работы в миллисекундах: {(stop - start) * 1000} \n')
+time_sort['Сортировка методом Шелла'] = (stop - start) * 1000
+
+
+# Сортировка методом Хоара
+print('Сортировка методом Хоара')
+start = time.time()
+
+#код
+
+print(array_6)
+stop = time.time()
+print(f'Время работы в миллисекундах: {(stop - start) * 1000} \n')
+time_sort['Сортировка методом Хоара'] = (stop - start) * 1000
+
+
+for i, j in time_sort.items():
+    print(f'{i}: {j} миллисекунд')

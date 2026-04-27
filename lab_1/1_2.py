@@ -7,18 +7,6 @@
 
 array = [int(input()), int(input()), int(input()), int(input())]
 
-# h = 0
-#
-# while h == 0:
-#     for i in range(len(array)):
-#         for j in range(len(array)):
-#             if array[i] > array[j]:
-#                 array[i], array[j] = array[j], array[i]
-#             else:
-#                 h -= 1
-
-
-
 for i in range(len(array)):
     h = 0
     num = array[i]

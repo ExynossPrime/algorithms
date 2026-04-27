@@ -19,3 +19,4 @@ for i in array:
     for j in array:
         print ('wb')
 
+
