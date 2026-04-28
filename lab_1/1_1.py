@@ -16,9 +16,7 @@ for i in array:
         dict[i] = a
 
 if not dict:
-    print('Нет повторяющихся значений')
+    print('Нет повторяющихся значений)
 else:
     for i in dict:
         print(f'Число {i} встречается в массиве: {dict[i]} раза')
-
-
